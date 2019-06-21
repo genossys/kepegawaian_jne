@@ -10,7 +10,7 @@ Data User
 <!-- Button to Open the Modal -->
 <div>
     <button id="tambahModal" style="margin-bottom: 10px; margin-top: 20px" type="button" class="btn btn-primary box-tools pull-right" data-toggle="modal" data-target="#modaltambahUser">
-        Tambah Data User
+        <i class="fa fa-plus-circle" aria-hidden="true"></i> Data User
     </button>
 
 </div>
@@ -23,8 +23,6 @@ Data User
                 <th>Email</th>
                 <th>Nama</th>
                 <th>No. Telp</th>
-                <th>Tanggal Lahir</th>
-                <th>Alamat</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -46,39 +44,25 @@ Data User
                     <div class="alert alert-danger" style="display:none"></div>
                     <div class="alert alert-success" style="display:none"></div>
 
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label>Nama </label>
-                                <input type="text" class="form-control" placeholder="Nama" id="txtNama" name="txtNama">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label>Email </label>
-                                <input type="email" class="form-control" placeholder="Nama" id="txtEmail" name="txtEmail">
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Nama </label>
+                        <input type="text" class="form-control" placeholder="Nama" id="txtNama" name="txtNama">
                     </div>
 
                     <div class="form-group">
-                        <label>Alamat </label>
-                        <input type="text" class="form-control" placeholder="Alamat" id="txtAlamat" name="txtAlamat">
+                        <label>Email </label>
+                        <input type="email" class="form-control" placeholder="Email" id="txtEmail" name="txtEmail">
                     </div>
+
 
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label>Tanggal Lahir</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                            <i class="fa fa-calendar"></i>
-                                        </span>
-                                    </div>
-                                    <input type="text" class="form-control float-right datepicker" name="dateTanggalLahir" id="dateTanggalLahir">
-                                </div>
+                                <label>Hak Akses</label>
+                                <select class="form-control" id="cBoxHakAkses">
+                                    <option value="admin">Admin</option>
+                                    <option value="user">User</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -94,7 +78,7 @@ Data User
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label >Password</label>
+                                <label>Password</label>
                                 <input type="password" class="form-control" placeholder="Password" id="txtPasswordUser" name="txtPasswordUser">
                             </div>
                         </div>
@@ -102,23 +86,10 @@ Data User
 
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label >Konfirmasi Password</label>
+                                <label>Konfirmasi Password</label>
                                 <input type="password" class="form-control" placeholder="Masukan Ulang Password" id="txtConPasswordUser" name="txtConPasswordUser">
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label >Hak Akses</label>
-                                <select class="form-control" id="cBoxHakAkses">
-                                    <option value="admin">Admin</option>
-                                    <option value="user">User</option>
-                                </select>
-                            </div>
-                        </div>
-
                     </div>
 
 
@@ -136,22 +107,11 @@ Data User
 @endsection
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('/css/bootstrap-datepicker.min.css')}}">
 @endsection
 
 
 @section('script')
-<script src="{{ asset('/js/tampilan/fileinput.js') }}"></script>
 <script src="{{ asset('/js/tampilan/changemodal.js') }}"></script>
-<script src="{{ asset('/js/bootstrap-datepicker.min.js') }}"></script>
-<script type="text/javascript">
-    $(function() {
-        $(".datepicker").datepicker({
-            format: 'yyyy-mm-dd',
-            autoclose: true,
-            todayHighlight: true,
-        });
-    });
-</script>
+
 
 @endsection

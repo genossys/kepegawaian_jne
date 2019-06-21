@@ -96,6 +96,12 @@
                             </a>
                             <ul class="nav nav-treeview">
 
+                                <li class="nav-item ">
+                                    <a href="{{route ('pegawai')}}" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>Data Pegawai</p>
+                                    </a>
+                                </li>
 
                                 <li class="nav-item ">
                                     <a href="{{route ('user')}}" class="nav-link">
@@ -116,9 +122,9 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="" class="nav-link ">
+                                    <a href="/inputabsensi" class="nav-link ">
                                         <i class="fa fa-circle-o nav-icon"></i>
-                                        <p>Order</p>
+                                        <p>Input Absensi</p>
                                     </a>
                                 </li>
 

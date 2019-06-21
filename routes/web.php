@@ -30,22 +30,18 @@ Route::get('/admin', function () {
     return view('/admin/menuawal');
 })->name('admin');
 
-Route::get('/produk', function () {
-    return view('/admin/master/dataproduk');
-})->name('produk');
-
 Route::get('/user', function () {
     return view('/admin/master/datauser');
 })->name('user');
 
-Route::get('/kategori', function () {
-    return view('/admin/master/datakategori');
-})->name('kategori');
+Route::get('/pegawai', function () {
+    return view('/admin/master/datapegawai');
+})->name('pegawai');
 
 
-
-
-
+Route::get('/inputabsensi', function () {
+    return view('/admin/transaksi/inputabsensi');
+})->name('inputabsensi');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

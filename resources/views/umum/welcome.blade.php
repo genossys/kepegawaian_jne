@@ -22,12 +22,12 @@
 <body class="bodypolos">
 
 
-<nav class="navbar navbarfont navbar-expand-lg navbar-inverse navbar-dark fixed-top home" style="background-color: rgba(0, 0, 0, 0.0)">
+<!-- <nav class="navbar navbarfont navbar-expand-lg navbar-inverse navbar-dark fixed-top home" style="background-color: rgba(0, 0, 0, 0.0)">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span id="toggler"><i class="fa fa-bars" aria-hidden="true"></i></span>
     </button>
     <a class="navbar-brand" href="#">
-        <!-- <img src="{{ asset('/assets/gambar/logo2.png') }} " alt="logo" /> -->
+        <img src="{{ asset('/assets/gambar/logo2.png') }} " alt="logo" />
     </a>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -50,7 +50,7 @@
 
         </ul>
     </div>
-</nav>
+</nav> -->
 
 <section class="gambarfullhome">
 
@@ -65,7 +65,7 @@
                 Manage pegawai anda di sini
             </p>
 
-            <button class="btn btn-lg anBtn btn-depan">Menu Utama</button>
+            <a href="/login" class="btn btn-lg anBtn btn-depan">Masuk Ke Aplikasi</a>
         </div>
     </div>
 </section>
