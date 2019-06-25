@@ -25,6 +25,8 @@ Data Pegawai
                 <th>No. Telp</th>
                 <th>Tanggal Lahir</th>
                 <th>Alamat</th>
+                <th>jabatan</th>
+                <th>Gaji /hari</th>
                 <th>Action</th>
             </tr>
         </thead>
