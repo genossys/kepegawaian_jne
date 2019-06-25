@@ -148,9 +148,16 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="" class="nav-link ">
+                                    <a href="/laporanabsen" class="nav-link ">
                                         <i class="fa fa-circle-o nav-icon"></i>
-                                        <p>Data Order</p>
+                                        <p>Laporan Absensi</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="/laporangaji" class="nav-link ">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>Laporan Gaji</p>
                                     </a>
                                 </li>
 
@@ -193,11 +200,9 @@
     <!-- jQuery -->
     <script src="{{ asset ('/adminlte/plugins/jquery/jquery.min.js')}}"></script>
     <!-- jQuery UI 1.11.4 -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-        $.widget.bridge('uibutton', $.ui.button)
-    </script>
+
     <!-- Bootstrap 4 -->
     <script src=" {{asset ('/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <!-- Bootstrap WYSIHTML5 -->

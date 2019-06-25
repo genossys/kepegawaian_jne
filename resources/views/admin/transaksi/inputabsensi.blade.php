@@ -7,9 +7,7 @@ Laporan Data Lelang
 @section('content')
 
 
-<!-- Button to Open the Modal -->
 <section class="pencarianlap">
-    <!-- Date and time range -->
     <div class="container">
 
         <div class="row mb-0">
@@ -30,62 +28,67 @@ Laporan Data Lelang
         </div>
 
         <div class="row">
-            <div class="col-sm-4 mb-2">
-                <label class="mb-0">Pegawai</label>
-                <div class="form-inline">
-                    <button class="btn btn-info " style="width: 10%;border-top-right-radius: 0;border-bottom-right-radius: 0" id="salesModal" data-toggle="modal" data-target="#modalCariSales"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    <input type="text" readonly class="form-control" placeholder="Pegawai" id="txtPegawai" name="txtPegawai" style="width: 90%;border-top-left-radius: 0;border-bottom-left-radius: 0">
-
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>Pegawai</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span>
+                                <button class="btn btn-info " id="pegawaiModal" data-toggle="modal" data-target="#modalCariPegawai"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                        <input type="text" readonly class="form-control float-right" placeholder="Pegawai" id="pegawai" name="pegawai"">
+                    </div>
                 </div>
             </div>
             <div class=" col-sm-4">
-                <label><br></label>
-                <div class="form-inline">
-                    <a class="text-danger"> *Semua </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <div class="bootstrap-timepicker">
-                    <div class="form-group">
-                        <label>Jam Masuk:</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
-                            </div>
-                            <input type="text" class="form-control timepicker" id="txtJamMasuk" name="txtJamKeluar">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="bootstrap-timepicker">
-                    <div class="form-group">
-                        <label>Jam Keluar:</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
-                            </div>
-                            <input type="text" class="form-control timepicker" id="txtJamMasuk" name="txtJamKeluar">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-2">
-                <div class="bootstrap-timepicker">
-                    <div class="form-group">
                         <label><br></label>
-                        <div class="input-group">
-                            <button class="btn btn-primary"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Input</button>
+                        <div class="form-inline">
+                            <a class="text-danger"> *Semua </a>
                         </div>
                     </div>
-                </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="bootstrap-timepicker">
+                            <div class="form-group">
+                                <label>Jam Masuk:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control timepicker" id="txtJamMasuk" name="txtJamKeluar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="bootstrap-timepicker">
+                            <div class="form-group">
+                                <label>Jam Keluar:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control timepicker" id="txtJamMasuk" name="txtJamKeluar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="bootstrap-timepicker">
+                            <div class="form-group">
+                                <label><br></label>
+                                <div class="input-group">
+                                    <button class="btn btn-primary"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Input</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
 </section>
 
 <section>
@@ -108,6 +111,32 @@ Laporan Data Lelang
     </div>
 </section>
 
+<!--Start Modal -->
+<div class="modal fade" id="modalCariPegawai">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Pegawai</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive-lg">
+                    <table id="tbcustomer" class="table table-striped  table-bordered table-hover" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Kode Pegawai</th>
+                                <th>Nama Pegawai</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- EndModal -->
 @endsection
 
 @section('css')

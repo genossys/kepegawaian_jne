@@ -47,6 +47,17 @@ Route::get('/pegawai', function () {
 Route::get('/inputabsensi', function () {
     return view('/admin/transaksi/inputabsensi');
 })->name('inputabsensi');
+
+
+
+
+Route::get('/laporanabsen', function () {
+    return view('/admin/laporan/laporanabsensi');
+})->name('laporanabsen');
+
+Route::get('/laporangaji', function () {
+    return view('/admin/laporan/laporangaji');
+})->name('laporangaji');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
