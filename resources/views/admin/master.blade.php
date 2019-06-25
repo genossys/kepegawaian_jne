@@ -109,6 +109,13 @@
                                         <p>Data User</p>
                                     </a>
                                 </li>
+
+                                <li class="nav-item ">
+                                    <a href="{{route ('shift')}}" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>Data Shift</p>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
 

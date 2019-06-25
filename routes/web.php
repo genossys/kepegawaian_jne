@@ -34,6 +34,11 @@ Route::get('/user', function () {
     return view('/admin/master/datauser');
 })->name('user');
 
+Route::get('/shift', function () {
+    return view('/admin/master/datashift');
+})->name('shift');
+
+
 Route::get('/pegawai', function () {
     return view('/admin/master/datapegawai');
 })->name('pegawai');

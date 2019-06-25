@@ -52,23 +52,17 @@ Data Pegawai
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Nama </label>
-                                <input type="text" class="form-control" placeholder="Nama" id="txtNama" name="txtNama">
+                                <input type="text" class="form-control" placeholder="Nama" id="nama" name="nama">
                             </div>
                         </div>
 
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Email </label>
-                                <input type="email" class="form-control" placeholder="Email" id="txtEmail" name="txtEmail">
+                                <input type="email" class="form-control" placeholder="Email" id="email" name="email">
                             </div>
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <label>Alamat </label>
-                        <input type="text" class="form-control" placeholder="Alamat" id="txtAlamat" name="txtAlamat">
-                    </div>
-
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -79,16 +73,42 @@ Data Pegawai
                                             <i class="fa fa-calendar"></i>
                                         </span>
                                     </div>
-                                    <input type="text" class="form-control float-right datepicker" name="dateTanggalLahir" id="dateTanggalLahir">
+                                    <input type="text" class="form-control float-right datepicker" name="tanggalLahir" id="tanggalLahir">
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>No.Telp </label>
-                                <input type="text" class="form-control" placeholder="No. Telp" id="txtNoTelp" name="txtNoTelp">
+                                <input type="text" class="form-control" placeholder="No. Telp" id="noTelp" name="noTelp">
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Jabatan </label>
+                                <select name="jabatan" id="jabatan" class="form-control">
+                                    <option value="admin">Admin</option>
+                                    <option value="admin">Manager</option>
+                                    <option value="admin">Kurir</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Gaji /hari </label>
+                                <input type="number" class="form-control" placeholder="Gaji" id="gajiPerHari" name="gajiPerHari">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Alamat </label>
+                        <input type="text" class="form-control" placeholder="Alamat" id="txtAlamat" name="txtAlamat">
                     </div>
                     <div class="text-right">
                         <button id="btnSimpan" class="btn btn-primary"></button>
@@ -120,5 +140,7 @@ Data Pegawai
         });
     });
 </script>
+
+
 
 @endsection

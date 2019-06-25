@@ -33,7 +33,7 @@ Laporan Data Lelang
         <div class="row mb-2">
             <div class="col-sm-4 ">
                 <div class="form-group">
-                    <label>Tanggal Penjualan:</label>
+                    <label>Tanggal:</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-calendar"></i></span>
