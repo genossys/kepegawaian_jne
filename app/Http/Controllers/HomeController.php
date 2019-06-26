@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use PDF;
+use Illuminate\Support\Facades\App;
 
 class HomeController extends Controller
 {
@@ -24,5 +26,12 @@ class HomeController extends Controller
     public function index()
     {
         return view('umum.login');
+    }
+
+    public function cobapdf()
+    {
+        $pdf = App::make('dompdf.wrapper');
+        $pdf->loadHTML('<h1>Test</h1>');
+        return $pdf->stream();
     }
 }

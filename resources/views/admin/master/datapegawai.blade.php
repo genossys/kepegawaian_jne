@@ -112,6 +112,19 @@ Data Pegawai
                         <label>Alamat </label>
                         <input type="text" class="form-control" placeholder="Alamat" id="txtAlamat" name="txtAlamat">
                     </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Shift </label>
+                                <select name="shift" id="shift" class="form-control">
+                                    <option value="admin">Pagi</option>
+                                    <option value="admin">Siang</option>
+                                    <option value="admin">Sore</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                     <div class="text-right">
                         <button id="btnSimpan" class="btn btn-primary"></button>
                     </div>
